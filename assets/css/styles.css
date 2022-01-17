@@ -78,6 +78,7 @@ img{
 /* Animated text */
 
   .text_animated {
+    padding-top: 60px;
     background-color:  #174128;
     display: flex;
     justify-content: center;
@@ -222,7 +223,7 @@ img{
   row-gap: 1rem;
 }
 .home__data{
-  
+  margin-bottom: 28%;
   align-self: center;
 }
 .home__title{
@@ -246,9 +247,7 @@ img{
   color: var(--second-color);
 }
 
-.whatsappIcon{
-  /* position: sticky; */
-}
+
 .home__social-icon:hover{
   color: var(--first-color);
 }
@@ -848,21 +847,34 @@ img{
 }
 /* --------------------------Mobile screen------------------------ */
 @media screen and (max-width: 768px){
+  .home__data{
+    margin-bottom: 60%;
+    align-self: center;
+  }
+  .text_animated{
+    padding: 5px;
+    font-size: 9px;
+  }
   .package__container{
     grid-template-columns: repeat(1,1fr);
     align-items: center;
     text-align: initial;
     /* row-gap: 2rem; */
     text-align: center;
+    margin-left: 11%;
   }
   .home__img{
-    top: 55%;
+    top: 60%;
     height: 60%;
     width: 80%;
     /* bottom: 15%; */
   }
   .slider-container{
     height: 60%;
+  }
+  .nav{
+    padding-top: 25px;
+    
   }
 }
 @media screen and (min-width: 1024px){
